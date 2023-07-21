@@ -26,6 +26,9 @@ function App() {
   const handleNext = () => {
     setCurrentPage(currentPage + 1)
   }
+  const handlePrev = () => {
+    setCurrentPage(currentPage - 1)
+  }
 
 
 
@@ -49,6 +52,7 @@ function App() {
         <div>
         <label id="age">Enter age:</label>
         <input type="text" onChange={hangleFormData} htmlFor="age" name="age"/>
+        <button type="submit" onClick={handlePrev}>Go Back</button>
         <button type="submit" onClick={handleNext}>Next</button>
         </div>
         :
@@ -57,8 +61,10 @@ function App() {
 
         { currentPage === 3 ? 
         <div>
+        <button type="submit" onClick={handlePrev}>Go Back</button>
         <label id="email">Enter email:</label>
         <input type="text" onChange={hangleFormData} htmlFor="email" name="email"/>
+        <button type="submit" onClick={handlePrev}>Go Back</button>
         <input type="submit" value="Submit"/>
         </div>
         :
