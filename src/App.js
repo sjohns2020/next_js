@@ -61,7 +61,6 @@ function App() {
 
         { currentPage === 3 ? 
         <div>
-        <button type="submit" onClick={handlePrev}>Go Back</button>
         <label id="email">Enter email:</label>
         <input type="text" onChange={hangleFormData} htmlFor="email" name="email"/>
         <button type="submit" onClick={handlePrev}>Go Back</button>
