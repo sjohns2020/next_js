@@ -1,6 +1,5 @@
 
 import './App.css';
-import pic from './pic.webp'
 import React, {useState} from 'react'
 
 function App() {
