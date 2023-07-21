@@ -68,10 +68,11 @@ function App() {
 
         { currentPage === 4 ? 
         <div>
-          <h3>Reults: </h3>
+          <h3>Results: </h3>
           <p>name: {formData.name}</p>
           <p>age: {formData.age}</p>
           <p>email: {formData.email}</p>
+          <button onClick={() => {setCurrentPage(1)}}>Try again</button>
         </div>
         :
         null
